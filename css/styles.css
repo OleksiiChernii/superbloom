@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
@@ -144,7 +144,7 @@ header {
 
   color: white;
 
-  background-image: url('../images/mission.png');
+  background-image: url("../images/mission.png");
   background-repeat: no-repeat;
   background-position: top 70px right 145px;
   background-size: 517px;
@@ -152,11 +152,11 @@ header {
   position: relative;
 }
 
-.mission::after{
-  content: '';
+.mission::after {
+  content: "";
   width: 31px;
   height: 17px;
-  background-image: url('../images/infinite.png');
+  background-image: url("../images/infinite.png");
   background-size: cover;
   position: absolute;
   top: 50%;
@@ -179,7 +179,7 @@ header {
   letter-spacing: 0.3px;
 }
 
-.mission button{
+.mission button {
   border: none;
 
   background-color: inherit;
@@ -193,4 +193,57 @@ header {
   border-radius: 20px;
   border: 2px solid white;
   padding: 0 26px;
+}
+
+.conversation {
+  padding-right: 160px;
+  padding-top: 111px;
+  padding-bottom: 125px;
+  background-color: #fff4e3;
+
+  background-image: url("../images/therapiests.png");
+  background-size: 440px;
+  background-repeat: no-repeat;
+  background-position: top 80px left 155px;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  color: #00402f;
+}
+
+.conversation__container {
+  width: 615px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 40px;
+}
+
+.conversation__container h2 {
+  font-size: 50px;
+  line-height: 55px;
+}
+
+.conversation__container p {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.conversation__container button{
+  color: white;
+  background-color: #00402f;
+  padding: 0 25px;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 2.5px;
+
+  border: none;
+  border-radius: 50px;
 }
