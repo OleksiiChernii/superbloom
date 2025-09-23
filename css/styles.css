@@ -247,3 +247,39 @@ header {
   border: none;
   border-radius: 50px;
 }
+
+.founder{
+  padding-top: 82px;
+  padding-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  color: #00402f;
+}
+
+.founder h2{
+  width: 920px;
+  font-size: 50px;
+  line-height: 65px;
+  text-align: center;
+  letter-spacing: 0;
+}
+
+.founder figcaption{
+  text-align: center;
+}
+
+.founder .name{
+  font-size: 13px;
+  line-height: 18px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+} 
+
+.founder .role{
+  font-size: 12px;
+  line-height: 15px;
+}
