@@ -283,3 +283,85 @@ header {
   font-size: 12px;
   line-height: 15px;
 }
+
+.community{
+  padding: 10px 135px 120px;
+  position: relative;
+}
+
+.community::after{
+  content: '';
+  width: 16px;
+  height: 30px;
+  background-image: url('../images/paragraph.png');
+  background-size: cover;
+
+  position: absolute;
+  bottom: 120px;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.community li{
+  padding: 255px 0;
+  position: relative;
+}
+
+.community .wrapper{
+  width: 500px;
+}
+
+.community .right-align{
+  margin-left: auto;
+}
+
+.community li:not(:last-child)::after{
+  content: "";
+  width: 32px;
+  height: 18px;
+  background-image: url('../images/infinite2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: block;
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(50%);
+}
+
+.community li:nth-child(1){
+  background-image: url('../images/community.png');
+  background-size: 524px;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: center;
+}
+
+.community li:nth-child(2){
+  background-image: url('../images/terms.png');
+  background-size: 595px;
+  background-repeat: no-repeat;
+  background-position: left 605px top 10px;
+}
+
+.community li:nth-child(3){
+  background-image: url('../images/contributors.png');
+  background-size: 461px;
+  background-repeat: no-repeat;
+  background-position-x: 20px;
+  background-position-y: center;
+}
+
+.community h2{
+  font-size: 36px;
+  line-height: 39px;
+  padding-bottom: 25px;
+  color: #00402f;
+}
+
+.community p{
+  font-size: 16px;
+  line-height: 24px;
+  color: #00402f;
+}
