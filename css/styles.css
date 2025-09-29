@@ -1,11 +1,17 @@
+:root{
+  --primary-color: #00402f;
+}
+
 .container {
   margin: 0 auto;
   width: 1440px;
 }
+
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 button {
@@ -25,13 +31,16 @@ p {
   padding: 0;
 }
 
+p{
+  color: var(--primary-color);
+}
+
 header {
   height: 85px;
 
   text-transform: uppercase;
   font-weight: 400;
   font-size: 12px;
-  color: #00402f;
 
   display: flex;
   align-items: center;
@@ -65,7 +74,7 @@ header {
 }
 
 .auth li:last-child {
-  background-color: #00402f;
+  background-color: var(--primary-color);
   color: white;
   padding: 36px 30px;
 }
@@ -105,16 +114,23 @@ header {
   line-height: 53px;
 }
 
-.greatness__container > p {
+.greatness__container p {
   font-size: 14px;
   line-height: 20px;
   width: 516px;
+  color: white;
 }
 
 .greatness__container ul {
   padding-left: 25px;
   font-size: 14px;
   line-height: 33px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 15px;
 }
 
 .greatness__container button {
@@ -209,8 +225,6 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-
-  color: #00402f;
 }
 
 .conversation__container {
@@ -235,7 +249,7 @@ header {
 
 .conversation__container button{
   color: white;
-  background-color: #00402f;
+  background-color: var(--primary-color);
   padding: 0 25px;
 
   text-transform: uppercase;
@@ -257,7 +271,6 @@ header {
   align-items: center;
   justify-content: center;
   gap: 80px;
-  color: #00402f;
 }
 
 .founder h2{
@@ -285,7 +298,10 @@ header {
 }
 
 .community{
-  padding: 10px 135px 120px;
+  /* padding: 10px 135px 120px; */
+  padding-top: 10px;
+  padding-left: 135px;
+  padding-bottom: 120px;
   position: relative;
 }
 
@@ -303,7 +319,7 @@ header {
 }
 
 .community li{
-  padding: 255px 0;
+  padding: 275px 0;
   position: relative;
 }
 
@@ -336,13 +352,15 @@ header {
   background-repeat: no-repeat;
   background-position-x: 20px;
   background-position-y: center;
+
+  padding-right: 135px;
 }
 
 .community li:nth-child(2){
   background-image: url('../images/terms.png');
   background-size: 595px;
   background-repeat: no-repeat;
-  background-position: left 605px top 10px;
+  background-position: top 50% left 100%;
 }
 
 .community li:nth-child(3){
@@ -351,17 +369,17 @@ header {
   background-repeat: no-repeat;
   background-position-x: 20px;
   background-position-y: center;
+
+  padding-right: 135px;
 }
 
 .community h2{
   font-size: 36px;
   line-height: 39px;
   padding-bottom: 25px;
-  color: #00402f;
 }
 
 .community p{
   font-size: 16px;
   line-height: 24px;
-  color: #00402f;
 }
