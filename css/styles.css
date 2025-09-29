@@ -1,4 +1,4 @@
-:root{
+:root {
   --primary-color: #00402f;
 }
 
@@ -31,7 +31,7 @@ p {
   padding: 0;
 }
 
-p{
+p {
   color: var(--primary-color);
 }
 
@@ -247,7 +247,7 @@ header {
   line-height: 22px;
 }
 
-.conversation__container button{
+.conversation__container button {
   color: white;
   background-color: var(--primary-color);
   padding: 0 25px;
@@ -262,7 +262,7 @@ header {
   border-radius: 50px;
 }
 
-.founder{
+.founder {
   padding-top: 82px;
   padding-bottom: 50px;
 
@@ -273,7 +273,7 @@ header {
   gap: 80px;
 }
 
-.founder h2{
+.founder h2 {
   width: 920px;
   font-size: 50px;
   line-height: 65px;
@@ -281,23 +281,23 @@ header {
   letter-spacing: 0;
 }
 
-.founder figcaption{
+.founder figcaption {
   text-align: center;
 }
 
-.founder .name{
+.founder .name {
   font-size: 13px;
   line-height: 18px;
   padding-top: 20px;
   padding-bottom: 5px;
-} 
+}
 
-.founder .role{
+.founder .role {
   font-size: 12px;
   line-height: 15px;
 }
 
-.community{
+.community {
   /* padding: 10px 135px 120px; */
   padding-top: 10px;
   padding-left: 135px;
@@ -305,11 +305,11 @@ header {
   position: relative;
 }
 
-.community::after{
-  content: '';
+.community::after {
+  content: "";
   width: 16px;
   height: 30px;
-  background-image: url('../images/paragraph.png');
+  background-image: url("../images/paragraph.png");
   background-size: cover;
 
   position: absolute;
@@ -318,24 +318,24 @@ header {
   transform: translateX(50%);
 }
 
-.community li{
+.community li {
   padding: 275px 0;
   position: relative;
 }
 
-.community .wrapper{
+.community .wrapper {
   width: 500px;
 }
 
-.community .right-align{
+.community .right-align {
   margin-left: auto;
 }
 
-.community li:not(:last-child)::after{
+.community li:not(:last-child)::after {
   content: "";
   width: 32px;
   height: 18px;
-  background-image: url('../images/infinite2.png');
+  background-image: url("../images/infinite2.png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -346,8 +346,8 @@ header {
   transform: translateX(50%);
 }
 
-.community li:nth-child(1){
-  background-image: url('../images/community.png');
+.community li:nth-child(1) {
+  background-image: url("../images/community.png");
   background-size: 524px;
   background-repeat: no-repeat;
   background-position-x: 20px;
@@ -356,15 +356,15 @@ header {
   padding-right: 135px;
 }
 
-.community li:nth-child(2){
-  background-image: url('../images/terms.png');
+.community li:nth-child(2) {
+  background-image: url("../images/terms.png");
   background-size: 595px;
   background-repeat: no-repeat;
   background-position: top 50% left 100%;
 }
 
-.community li:nth-child(3){
-  background-image: url('../images/contributors.png');
+.community li:nth-child(3) {
+  background-image: url("../images/contributors.png");
   background-size: 461px;
   background-repeat: no-repeat;
   background-position-x: 20px;
@@ -373,13 +373,129 @@ header {
   padding-right: 135px;
 }
 
-.community h2{
+.community h2 {
   font-size: 36px;
   line-height: 39px;
   padding-bottom: 25px;
 }
 
-.community p{
+.community p {
   font-size: 16px;
   line-height: 24px;
+}
+
+.testimonials {
+  padding: 90px 145px;
+  background-color: #fff4e3;
+  color: var(--primary-color);
+}
+
+.testimonials h2 {
+  padding-bottom: 70px;
+  text-align: center;
+  font-size: 50px;
+  line-height: 45px;
+}
+
+.testimonials ul {
+  padding: 10px 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+
+.forum {
+  background-color: #522840;
+  padding-top: 180px;
+  padding-bottom: 120px;
+
+  text-align: center;
+  position: relative;
+}
+
+.forum::before{
+  content: '';
+  width: 71px;
+  height: 40px;
+  background-image: url('../images/infinite1.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  position: absolute;
+  left: 50%;
+  top: 100px;
+
+  transform: translateX(-50%);
+}
+
+.forum p {
+  text-align: center;
+  width: 818px;
+  margin: 0 auto;
+  font-size: 34px;
+  line-height: 44px;
+  letter-spacing: 0.5px;
+  color: white;
+  padding-bottom: 56px;
+}
+
+.forum button{
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-color);
+  letter-spacing: 4.2px;
+  line-height: 25px;
+  padding: 0 24px;
+  border: none;
+  border-radius: 50px;
+}
+
+footer {
+  padding: 70px 145px;
+}
+
+footer ul {
+  padding: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+footer li {
+  width: 360px;
+
+  font-size: 12px;
+  line-height: 15px;
+}
+
+footer li:last-child{
+  text-align: right;
+}
+
+footer span{
+  font-size: 19px;
+  line-height: 20px;
+}
+
+.infinite{
+  position: relative;
+}
+
+.infinite::after{
+  content: '';
+  width: 32px;
+  height: 18px;
+
+  background-image: url('../images/infinite2.png');
+  background-size: contain;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
 }
