@@ -2,11 +2,6 @@
   --primary-color: #00402f;
 }
 
-.container {
-  margin: 0 auto;
-  width: 1440px;
-}
-
 * {
   font-family: "Roboto", sans-serif;
   margin: 0;
@@ -16,6 +11,10 @@
 
 button {
   cursor: pointer;
+  text-transform: uppercase;
+  border: none;
+
+  font-weight: 700;
 }
 
 a {
@@ -31,11 +30,16 @@ p {
   padding: 0;
 }
 
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
 p {
   color: var(--primary-color);
 }
 
-header {
+.header {
   height: 85px;
 
   text-transform: uppercase;
@@ -49,13 +53,13 @@ header {
   padding-left: 34px;
 }
 
-.nav__container {
+.header__container {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.navigation {
+.navigation__list {
   padding: 0 50px;
   display: flex;
   align-items: center;
@@ -64,7 +68,7 @@ header {
   gap: 80px;
 }
 
-.auth {
+.auth__list {
   padding-left: 50px;
 
   display: flex;
@@ -73,13 +77,13 @@ header {
   gap: 50px;
 }
 
-.auth li:last-child {
+.auth__item:last-child {
   background-color: var(--primary-color);
   color: white;
   padding: 36px 30px;
 }
 
-.auth::before {
+.auth__list::before {
   content: "";
   height: 85px;
   width: 1px;
@@ -89,16 +93,21 @@ header {
 .greatness {
   background-color: rgba(102, 140, 130, 1);
   color: white;
-  padding-bottom: 80px;
-  padding-top: 80px;
+  padding-bottom: 140px;
+  padding-top: 130px;
+  padding-right: 145px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 80px;
+  background-image: url("../images/greatness.png");
+  background-size: 546px;
+  background-repeat: no-repeat;
+  background-position: 145px 50%;
 }
 
 .greatness__container {
+  margin-left: auto;
+  width: 603px;
+  padding-left: 80px;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -107,25 +116,21 @@ header {
   gap: 30px;
 }
 
-.greatness h1 {
+.greatness__header {
   font-size: 61px;
   font-weight: 400;
   width: 344px;
   line-height: 53px;
 }
 
-.greatness__container p {
+.greatness__label {
   font-size: 14px;
   line-height: 20px;
   width: 516px;
   color: white;
 }
 
-.greatness__container ul {
-  padding-left: 25px;
-  font-size: 14px;
-  line-height: 33px;
-
+.greatness__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,11 +138,15 @@ header {
   gap: 15px;
 }
 
-.greatness__container button {
+.greatness__desc {
+  padding-left: 25px;
+  font-size: 14px;
+  line-height: 33px;
+  color: white;
+}
+
+.greatness__button {
   border-radius: 16px;
-  border: none;
-  font-weight: 700;
-  text-transform: uppercase;
   font-size: 12px;
   line-height: 22px;
   letter-spacing: 2.5px;
@@ -148,24 +157,33 @@ header {
 }
 
 .mission {
-  height: 662px;
-
+  padding-top: 70px;
+  padding-bottom: 74px;
   padding-left: 145px;
+  padding-right: 146px;
+
   background-color: #849acb;
+
+  color: white;
+  position: relative;
+}
+
+.mission__container {
+  padding-top: 70px;
+  padding-bottom: 84px;
+
+  background-image: url("../images/mission.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 517px;
+
+  position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
   gap: 30px;
-
-  color: white;
-
-  background-image: url("../images/mission.png");
-  background-repeat: no-repeat;
-  background-position: top 70px right 145px;
-  background-size: 517px;
-
-  position: relative;
 }
 
 .mission::after {
@@ -181,54 +199,51 @@ header {
   transform: translateY(-50%);
 }
 
-.mission h2 {
+.mission__header {
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 4px;
   line-height: 13px;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.57);
 }
 
-.mission p {
+.mission__title {
   width: 550px;
   font-size: 34px;
   line-height: 51px;
   letter-spacing: 0.3px;
+  color: white;
 }
 
-.mission button {
-  border: none;
-
+.mission__button {
   background-color: inherit;
   color: white;
   font-size: 12px;
-  font-weight: 700;
   letter-spacing: 2.5px;
   line-height: 20px;
-  text-transform: uppercase;
 
   border-radius: 20px;
   border: 2px solid white;
   padding: 0 26px;
 }
-
 .conversation {
-  padding-right: 160px;
-  padding-top: 111px;
-  padding-bottom: 125px;
+  padding: 70px 145px;
   background-color: #fff4e3;
+  color: var(--primary-color);
 
   background-image: url("../images/therapiests.png");
   background-size: 440px;
   background-repeat: no-repeat;
-  background-position: top 80px left 155px;
-
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+  background-position: 155px 50%;
 }
 
 .conversation__container {
+  margin-left: auto;
   width: 615px;
+  padding-top: 40px;
+  padding-bottom: 55px;
 
   display: flex;
   flex-direction: column;
@@ -237,17 +252,18 @@ header {
   gap: 40px;
 }
 
-.conversation__container h2 {
+.conversation__header {
   font-size: 50px;
   line-height: 55px;
 }
 
-.conversation__container p {
+.conversation__desc {
   font-size: 16px;
   line-height: 22px;
+  font-weight: 400;
 }
 
-.conversation__container button {
+.conversation__button {
   color: white;
   background-color: var(--primary-color);
   padding: 0 25px;
@@ -271,9 +287,11 @@ header {
   align-items: center;
   justify-content: center;
   gap: 80px;
+
+  color: var(--primary-color);
 }
 
-.founder h2 {
+.founder__header {
   width: 920px;
   font-size: 50px;
   line-height: 65px;
@@ -281,27 +299,26 @@ header {
   letter-spacing: 0;
 }
 
-.founder figcaption {
+.founder__figcaption {
   text-align: center;
 }
 
-.founder .name {
+.founder__name {
   font-size: 13px;
   line-height: 18px;
   padding-top: 20px;
   padding-bottom: 5px;
 }
 
-.founder .role {
+.founder__role {
   font-size: 12px;
   line-height: 15px;
 }
 
 .community {
-  /* padding: 10px 135px 120px; */
-  padding-top: 10px;
-  padding-left: 135px;
-  padding-bottom: 120px;
+  padding: 10px 135px 120px;
+  color: var(--primary-color);
+
   position: relative;
 }
 
@@ -315,15 +332,16 @@ header {
   position: absolute;
   bottom: 120px;
   left: 50%;
-  transform: translateX(50%);
+  transform: translateX(-50%);
 }
 
-.community li {
-  padding: 275px 0;
+.community__item {
+  padding: 70px 0;
   position: relative;
 }
 
-.community .wrapper {
+.community__wrapper {
+  padding: 255px 0;
   width: 500px;
 }
 
@@ -331,73 +349,67 @@ header {
   margin-left: auto;
 }
 
-.community li:not(:last-child)::after {
+.community__item:not(:last-child)::after {
   content: "";
   width: 32px;
   height: 18px;
   background-image: url("../images/infinite2.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   display: block;
   position: absolute;
-  bottom: 24px;
+  bottom: 0;
   left: 50%;
-  transform: translateX(50%);
+  transform: translate(-50%, 50%);
 }
 
-.community li:nth-child(1) {
+.community__item:nth-child(1) {
   background-image: url("../images/community.png");
   background-size: 524px;
   background-repeat: no-repeat;
   background-position-x: 20px;
   background-position-y: center;
-
-  padding-right: 135px;
 }
 
-.community li:nth-child(2) {
+.community__item:nth-child(2) {
   background-image: url("../images/terms.png");
   background-size: 595px;
   background-repeat: no-repeat;
-  background-position: top 50% left 100%;
+  background-position: 100% 50%;
 }
 
-.community li:nth-child(3) {
+.community__item:nth-child(3) {
   background-image: url("../images/contributors.png");
   background-size: 461px;
   background-repeat: no-repeat;
-  background-position-x: 20px;
-  background-position-y: center;
-
-  padding-right: 135px;
+  background-position: 0 50%;
 }
 
-.community h2 {
+.community__header {
   font-size: 36px;
   line-height: 39px;
   padding-bottom: 25px;
 }
 
-.community p {
+.community__desc {
   font-size: 16px;
   line-height: 24px;
 }
-
 .testimonials {
   padding: 90px 145px;
   background-color: #fff4e3;
   color: var(--primary-color);
 }
 
-.testimonials h2 {
+.testimonials__header {
   padding-bottom: 70px;
   text-align: center;
   font-size: 50px;
   line-height: 45px;
 }
 
-.testimonials ul {
+.testimonials__list {
   padding: 10px 30px;
 
   display: flex;
@@ -415,11 +427,11 @@ header {
   position: relative;
 }
 
-.forum::before{
-  content: '';
+.forum::before {
+  content: "";
   width: 71px;
   height: 40px;
-  background-image: url('../images/infinite1.png');
+  background-image: url("../images/infinite1.png");
   background-size: contain;
   background-repeat: no-repeat;
 
@@ -430,7 +442,7 @@ header {
   transform: translateX(-50%);
 }
 
-.forum p {
+.forum__desc {
   text-align: center;
   width: 818px;
   margin: 0 auto;
@@ -441,23 +453,20 @@ header {
   padding-bottom: 56px;
 }
 
-.forum button{
+.forum__button {
   font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
   color: var(--primary-color);
   letter-spacing: 4.2px;
   line-height: 25px;
   padding: 0 24px;
-  border: none;
   border-radius: 50px;
 }
 
-footer {
+.footer {
   padding: 70px 145px;
 }
 
-footer ul {
+.footer__list {
   padding: 10px;
 
   display: flex;
@@ -465,32 +474,32 @@ footer ul {
   justify-content: space-between;
 }
 
-footer li {
+.footer__item {
   width: 360px;
 
   font-size: 12px;
   line-height: 15px;
 }
 
-footer li:last-child{
+.footer__item:last-child {
   text-align: right;
 }
 
-footer span{
+.footer__link {
   font-size: 19px;
   line-height: 20px;
 }
 
-.infinite{
+.footer--infinite {
   position: relative;
 }
 
-.infinite::after{
-  content: '';
+.footer--infinite::after {
+  content: "";
   width: 32px;
   height: 18px;
 
-  background-image: url('../images/infinite2.png');
+  background-image: url("../images/infinite2.png");
   background-size: contain;
 
   position: absolute;

@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Superbloom</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,68 +22,69 @@
 
   <body>
     <div class="container">
-      <header>
-        <img src="images/logo.png" alt="logo" width="195" />
-        <div class="nav__container">
-          <ul class="navigation">
-            <li><a href="#">forum</a></li>
-            <li><a href="">events</a></li>
-            <li><a href="">therapy</a></li>
-            <li><a href="">journal</a></li>
+      <header class="header">
+        <img class="logo" src="images/logo.png" alt="logo" width="195" />
+        <div class="header__container">
+          <ul class="navigation__list">
+            <li class="navigation__item"><a href="#">forum</a></li>
+            <li class="navigation__item"><a href="">events</a></li>
+            <li class="navigation__item"><a href="">therapy</a></li>
+            <li class="navigation__item"><a href="">journal</a></li>
           </ul>
-          <ul class="auth">
-            <li><a href="">login</a></li>
-            <li><a href="">sing up for therapy</a></li>
+          <ul class="auth__list">
+            <li class="auth__item"><a href="">login</a></li>
+            <li class="auth__item"><a href="">sing up for therapy</a></li>
           </ul>
         </div>
       </header>
       <main>
         <section class="greatness">
-          <div class="thumb">
-            <img src="images/greatness.png" alt="greatness" width="546" />
-          </div>
           <div class="greatness__container">
-            <h1>Greatness is within us.</h1>
-            <p>
+            <h1 class="greatness__header">Greatness is within us.</h1>
+            <p class="greatness__label">
               Superbloom provides a holistic mind-body approach to mental
               health. Together, we’ll thrive.
             </p>
-            <ul>
-              <li>
-                <p>One-on-one therapy with Superbloom vetted therapists.</p>
+            <ul class="greatness__list">
+              <li class="greatness__item">
+                <p class="greatness__desc">
+                  One-on-one therapy with Superbloom vetted therapists.
+                </p>
               </li>
-              <li>
-                <p>
+              <li class="greatness__item">
+                <p class="greatness__desc">
                   Access therapist-guided group workshops and monthly cohorts.
                 </p>
               </li>
-              <li>
-                <p>
+              <li class="greatness__item">
+                <p class="greatness__desc">
                   Ask questions and engage in our secure, supportive forums.
                 </p>
               </li>
-              <li>
-                <p>
+              <li class="greatness__item">
+                <p class="greatness__desc">
                   Discover the biopsychosocial approach to mind-body wellbeing.
                 </p>
               </li>
             </ul>
-            <button type="button">Learn more</button>
+            <button type="button" class="greatness__button">Learn more</button>
           </div>
         </section>
         <section class="mission">
-          <h2>mission</h2>
-          <p>
-            Our mental health resources are developed to encourage and bolster
-            emotional wellness. Superbloom is here to support you feeling
-            balanced in mind and body.
-          </p>
-          <button>get started</button>
+          <div class="mission__container">
+            <h2 class="mission__header">mission</h2>
+            <p class="mission__title">
+              Our mental health resources are developed to encourage and bolster
+              emotional wellness. Superbloom is here to support you feeling
+              balanced in mind and body.
+            </p>
+            <button type="button" class="mission__button">get started</button>
+          </div>
         </section>
         <section class="conversation">
           <div class="conversation__container">
-            <h2>Your mind is unique. Your mental health care should be too.</h2>
-            <p>
+            <h2 class="conversation__header">Your mind is unique. Your mental health care should be too.</h2>
+            <p class="converasion__desc">
               Superbloom provides one-on-one therapy sessions geared toward your
               specific needs, letting you select your package based on number of
               sessions and budget. We are community-oriented and offer mind-body
@@ -86,11 +94,11 @@
               your emotional wellness, you’ll find a way to shine with
               Superbloom.
             </p>
-            <button>Join the conversation</button>
+            <button type="button" class="conversation__button">Join the conversation</button>
           </div>
         </section>
         <section class="founder">
-          <h2>
+          <h2 class="founder__header">
             “We believe in the power of mind-body solutions for emotional
             wellbeing. Our personalized, clinically-backed approach is built to
             empower our members.”
@@ -101,18 +109,18 @@
               alt="Erin Berman, founder"
               width="120"
             />
-            <figcaption>
-              <p class="name">Eri Berman</p>
-              <p class="role">Founder</p>
+            <figcaption class="founder__figcaption">
+              <p class="founder__name">Eri Berman</p>
+              <p class="founder__role">Founder</p>
             </figcaption>
           </figure>
         </section>
         <section class="community">
-          <ul>
-            <li>
-              <div class="wrapper right-align">
-                <h2>Discover a Supportive Community</h2>
-                <p>
+          <ul class="community__list">
+            <li class="community__item">
+              <div class="community__wrapper right-align">
+                <h2 class="community__header">Discover a Supportive Community</h2>
+                <p class="community__desc">
                   We’ve built a private online community where you can talk
                   about your conditions, and discover relevant health
                   information through our forums and resources. Together, we’ll
@@ -120,10 +128,10 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div class="wrapper">
-                <h2>Mental Health on Your Terms</h2>
-                <p>
+            <li class="community__item">
+              <div class="community__wrapper">
+                <h2 class="community__header">Mental Health on Your Terms</h2>
+                <p class="community__desc">
                   We’ve all got our problems. Superbloom is the best place to
                   select an emotional wellness plan that works for your time and
                   budget from our offerings of group workshops, Super Circle
@@ -132,10 +140,10 @@
                 </p>
               </div>
             </li>
-            <li>
-              <div class="wrapper right-align">
-                <h2>Educational Resources for Mind-Body Support</h2>
-                <p>
+            <li class="community__item">
+              <div class="community__wrapper right-align">
+                <h2 class="community__header">Educational Resources for Mind-Body Support</h2>
+                <p class="community__desc">
                   Our content is created by wellness experts and community
                   members who have gone through physical and mental health
                   challenges of their own. Explore our Journal and join our
@@ -147,23 +155,23 @@
           </ul>
         </section>
         <section class="testimonials">
-          <h2>Testimonials</h2>
-          <ul>
-            <li>
+          <h2 class="testimonials__header">Testimonials</h2>
+          <ul class="testimonials__list">
+            <li class="testimonials__item">
               <img
                 src="images/testimonials1.png"
                 alt="about Amamda"
                 width="321"
               />
             </li>
-            <li>
+            <li class="testimonials__item">
               <img
                 src="images/testimonials2.png"
                 alt="about Palomi"
                 width="321"
               />
             </li>
-            <li>
+            <li class="testimonials__item">
               <img
                 src="images/testimonials3.png"
                 alt="about Emma"
@@ -173,34 +181,37 @@
           </ul>
         </section>
         <section class="forum">
-          <p>
+          <p class="forum__desc">
             At Superbloom, we know that none of our members share the same
             health journey. No two stories are the same, and no two bodies are
             either. That’s why we believe in building a platform that empowers
             you to take control of your mental health to feel your best self –
             today and every day.
           </p>
-          <button type="button">go to our forum</button>
+          <button type="button" class="forum__button">go to our forum</button>
         </section>
       </main>
-      <footer>
-        <ul class="infinite">
-          <li>
-            <p><span>@superbloom.health</span></p>
+      <footer class="footer">
+        <ul class="footer__list footer--infinite">
+          <li class="footer__item">
+            <p class="footer__desc"><span class="footer__link">@superbloom.health</span></p>
           </li>
-          <li>
-            <p>Terms & Conditions | Privacy Policy</p>
+          <li class="footer__item">
+            <p class="footer__desc">Terms & Conditions | Privacy Policy</p>
           </li>
         </ul>
-        <ul>
-          <li>
-            <p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <p class="footer__desc">
               If you’re experiencing a clinical emergency and need immediate
               help, call 911 or go to the nearest emergency room.
             </p>
           </li>
-          <li>
-            <p>National Suicide Prevention Lifeline: 800-273-8255 <br/>‍Crisis Text Line: Text HOME to 741741</p>
+          <li class="footer__item">
+            <p class="footer__desc">
+              National Suicide Prevention Lifeline: 800-273-8255 <br />‍Crisis
+              Text Line: Text HOME to 741741
+            </p>
           </li>
         </ul>
       </footer>
