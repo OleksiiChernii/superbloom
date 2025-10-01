@@ -1,0 +1,78 @@
+.community {
+  padding: 10px 135px 120px;
+  color: var(--primary-color);
+
+  position: relative;
+
+  .right-align {
+    margin-left: auto;
+  }
+
+  &__wrapper {
+    padding: 255px 0;
+    width: 500px;
+  }
+
+  &::after {
+    content: "";
+    width: 16px;
+    height: 30px;
+    background-image: url("../images/paragraph.png");
+    background-size: cover;
+
+    position: absolute;
+    bottom: 120px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.community__item {
+  padding: 70px 0;
+  position: relative;
+
+  &:not(:last-child)::after {
+    content: "";
+    width: 32px;
+    height: 18px;
+    background-image: url("../images/infinite2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+  &:nth-child(1) {
+    background-image: url("../images/community.png");
+    background-size: 524px;
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+  }
+  &:nth-child(2) {
+    background-image: url("../images/terms.png");
+    background-size: 595px;
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+  }
+  &:nth-child(3) {
+    background-image: url("../images/contributors.png");
+    background-size: 461px;
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+  }
+}
+
+.community {
+  &__header {
+    font-size: 36px;
+    line-height: 39px;
+    padding-bottom: 25px;
+  }
+  &__desc {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

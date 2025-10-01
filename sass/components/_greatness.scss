@@ -1,0 +1,64 @@
+.greatness {
+  background-color: rgba(102, 140, 130, 1);
+  color: white;
+  padding-bottom: 140px;
+  padding-top: 130px;
+  padding-right: 145px;
+
+  background-image: url("../images/greatness.png");
+  background-size: 546px;
+  background-repeat: no-repeat;
+  background-position: 145px 50%;
+
+  &__container {
+    margin-left: auto;
+    width: 603px;
+    padding-left: 80px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+
+    gap: 30px;
+  }
+}
+
+.greatness {
+  &__header {
+    font-size: 61px;
+    font-weight: 400;
+    width: 344px;
+    line-height: 53px;
+  }
+  &__label {
+    font-size: 14px;
+    line-height: 20px;
+    width: 516px;
+    color: white;
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+  }
+  &__desc {
+    padding-left: 25px;
+    font-size: 14px;
+    line-height: 33px;
+    color: white;
+  }
+
+  &__button {
+    border-radius: 16px;
+    font-size: 12px;
+    line-height: 22px;
+    letter-spacing: 2.5px;
+    color: rgba(0, 64, 47, 1);
+    background-color: white;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

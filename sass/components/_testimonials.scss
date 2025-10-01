@@ -1,0 +1,20 @@
+.testimonials {
+  padding: 90px 145px;
+  background-color: #fff4e3;
+  color: var(--primary-color);
+
+  &__header {
+    padding-bottom: 70px;
+    text-align: center;
+    font-size: 50px;
+    line-height: 45px;
+  }
+  &__list {
+    padding: 10px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+}

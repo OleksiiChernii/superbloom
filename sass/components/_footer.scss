@@ -1,0 +1,45 @@
+.footer {
+  padding: 70px 145px;
+
+  &__list {
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__link {
+    font-size: 19px;
+    line-height: 20px;
+  }
+}
+
+.footer__item {
+  width: 360px;
+
+  font-size: 12px;
+  line-height: 15px;
+  &:last-child {
+    text-align: right;
+  }
+}
+
+.footer--infinite {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 32px;
+    height: 18px;
+
+    background-image: url("../images/infinite2.png");
+    background-size: contain;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+  }
+}
